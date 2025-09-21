@@ -26,4 +26,4 @@ jobs:
       run: |
         npm i
         npm run dev
-        gulp build
+        npm i sass gulp-sass
