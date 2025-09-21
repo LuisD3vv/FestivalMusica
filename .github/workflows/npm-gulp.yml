@@ -19,9 +19,6 @@ jobs:
 
     - name: Install dependencies 
       run: npm i
-      
-    - name: Run sass script
-      run: npm run sass
 
     - name: Run gulp build script
       run: npm run dev
