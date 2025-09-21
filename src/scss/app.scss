@@ -1,0 +1,14 @@
+/*
+Aqui es donde debemos de colocar los estilos, no en un archivo normal css
+ya que se sobrescibe. por eso lo debemos de colocar aqui
+*/
+
+// variable con sass siguen las convenciones de un lenguaje
+
+// importar to do y evitar escribir namespace
+// formas de importart y diferencias entre use y fordward
+// @use evita repetidos
+// @fordward no soporta los namespaces, importa tel documento
+
+@forward "base";
+@forward "layout";

@@ -1,0 +1,24 @@
+{
+  "name": "festival-musical",
+  "version": "1.0.0",
+  "description": "Aprendiendo SASS y NPM",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:dist/css",
+    "dev": "gulp dev"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "GULP"
+  ],
+  "author": "Lissandro",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.92.1"
+  },
+  "dependencies": {
+    "gulp": "^5.0.1"
+  }
+}

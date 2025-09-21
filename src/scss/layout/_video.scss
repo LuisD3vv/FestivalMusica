@@ -1,0 +1,48 @@
+@use '../base/variables'as v;
+@use '../base/mixins' as m;
+
+
+// el padre siempre debe ser relativo
+.video {
+  position: relative;
+  min-height: 50rem;
+  max-height: 70rem;
+  overflow: hidden;
+  .overlay {
+  position: absolute;
+    background: linear-gradient(270deg, rgba( v.$morado, 60%) ,rgba(v.$morado, 90%));
+    // control de las coordenadas
+    //right: 0;
+    //bottom: 0;
+    // con inset es igualque poner todas las propiedades top,bottom,left en 0
+    inset: 0;
+    display: flex;
+    align-items: center;
+  }
+  video{
+    display: block;
+    width: auto;
+    @include m.desktop {
+      width: 100%;
+    }
+  }
+}
+.contenido-video {
+  // controla la profundidad de un elemento. para no tener un elemento dentras de otro
+  z-index: 10;
+  h2 {
+  color: v.$blanco;
+  font-size: 7rem;
+  margin: 0;
+  }
+  p{
+  background-color: v.$rosa;
+  display: inline-block;
+  padding: 1rem;
+    color: v.$blanco;
+    border-radius: .5rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 0;
+  }
+}
