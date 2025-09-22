@@ -22,9 +22,6 @@ jobs:
 
     - name: Install gulp-sass
       run: npm install gulp-sass 
-      
-    - name: Run gulp build script
-      run: npm run dev
 
     - name: Run Gulp build
       run: npx gulp build
