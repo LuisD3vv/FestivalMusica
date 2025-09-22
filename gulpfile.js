@@ -31,3 +31,13 @@ export function dev(done) {
 
     done();
 }
+
+const gulp = require('gulp');
+
+// Copiar documentos a dist
+gulp.task('docs', function () {
+  return gulp.src('docs/**/*')   // de dónde los tomas
+    .pipe(gulp.dest('dist/docs')); // a dónde los mandas
+});
+
+gulp.task('build', gulp.series('clean', 'html', 'css', 'js', 'docs'));
